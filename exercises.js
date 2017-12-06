@@ -1,10 +1,16 @@
 // Do not change any of the function names
 
 function getBiggest(x, y) {
+if (x > y) {
+  return x;
+} else if (x < y) {
+  return y;
+} else ( x = y) {
+  return x || y;
+}
   // x and y are integers.  Return the larger integer
   // if they are the same return either one
 }
-
 function greeting(language) {
   // return a greeting for three different languages:
   // language: 'German' -> 'Guten Tag!'
