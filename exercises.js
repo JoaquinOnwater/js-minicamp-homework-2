@@ -1,31 +1,52 @@
 // Do not change any of the function names
 
 function getBiggest(x, y) {
+  // x and y are integers.  Return the larger integer
+  // if they are the same return either one
 if (x > y) {
   return x;
 } else if (x < y) {
   return y;
-} else ( x = y) {
-  return x || y;
+}  else if (x === y) {
+    return x || y;
+  }
 }
-  // x and y are integers.  Return the larger integer
-  // if they are the same return either one
-}
+
+
 function greeting(language) {
   // return a greeting for three different languages:
   // language: 'German' -> 'Guten Tag!'
   // language: 'English' -> 'Hello!'
   // language: 'Spanish' -> 'Hola!'
   // if language is undefined return 'Hello!'
+if (language === 'German') {
+  return 'Guten Tag!';
+  } else if (language === 'English') {
+    return 'Hello!';
+  } else if (language === 'Spanish') {
+    return 'Hola!';
+  } else {
+    return 'Hello!';
+  }
 }
 
 function isTenOrFive(num) {
   // return true if num is 10 or 5
   // otherwise return false
+  if (isTenOrFive === 10 || 5) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function isInRange(num) {
   // return true if num is less than 50 and greater than 20
+  if (20 < num < 50) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function isInteger(num) {
